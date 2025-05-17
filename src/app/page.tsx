@@ -70,7 +70,7 @@ function Intro({ onStart }: { onStart: () => void }) {
           테스트 시작하기
         </button>
         <div className="mt-6 mb-2 text-lg font-bold text-pink-500 animate-pulse text-center">
-          {count.toLocaleString()}명이 참여했어요👍
+          {count.toLocaleString()}명의 조사병단이 참여했어요👍
         </div>
         <div className="mt-8 text-xs text-gray-400 text-center">
           ※ 본 테스트는 팬메이드이며, 공식 결과와 다를 수 있습니다.
@@ -269,7 +269,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white dark:bg-black">
-      <h1 className="text-2xl font-bold mb-8 text-center">나는 진격의거인 세계관에 태어났다면 누구였을까?</h1>
+      <h1 className="text-xl font-bold mb-8 text-center">진격의거인 세계관에 태어났다면 누구였을까?</h1>
       <Question question={questions[step]} onAnswer={handleAnswer} step={step} total={questions.length} />
     </div>
   );
