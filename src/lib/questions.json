@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "question": "친구는 햄버거를 먹고 싶어하지만 나는 돈까스를 먹고 싶다. 이럴 때 나는?",
+    "options": [
+      {
+        "text": "내 의견을 말하고 설득해본다.",
+        "characterIds": ["eren", "gabi", "porco", "magath"]
+      },
+      {
+        "text": "친구 의견을 존중하고 돈까스를 먹는다.",
+        "characterIds": ["mikasa", "colt", "historia"]
+      },
+      {
+        "text": "중간 메뉴를 찾아 타협한다.",
+        "characterIds": ["armin", "jean", "marco"]
+      },
+      {
+        "text": "각자 먹고 싶은 걸 시킨다.",
+        "characterIds": ["annie", "ymir", "kenny", "pieck"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "팀 프로젝트에서 팀장의 의견과 내 아이디어가 충돌했다. 나는?",
+    "options": [
+      {
+        "text": "논리적으로 설득하며 내 아이디어를 관철시킨다.",
+        "characterIds": ["eren", "gabi", "erwin", "magath"]
+      },
+      {
+        "text": "일단 팀장의 의견을 따르고 상황을 지켜본다.",
+        "characterIds": ["mikasa", "colt"]
+      },
+      {
+        "text": "팀원들과 조율하며 절충안을 제안한다.",
+        "characterIds": ["armin", "marco", "jean", "falco"]
+      },
+      {
+        "text": "대화를 피하고 조용히 내 역할만 한다.",
+        "characterIds": ["levi", "annie", "kenny", "pieck"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "친구가 회사 그만두고 싶다고 고민을 털어놓는다. 나는?",
+    "options": [
+      {
+        "text": "진심으로 공감하고 위로한다.",
+        "characterIds": ["sasha", "falco", "marco", "bertolt"]
+      },
+      {
+        "text": "묵묵히 듣고 필요한 말만 한다.",
+        "characterIds": ["mikasa", "levi"]
+      },
+      {
+        "text": "현실적인 조언을 해준다.",
+        "characterIds": ["armin", "erwin", "pieck"]
+      },
+      {
+        "text": "그럴 수도 있다며 대화를 넘긴다.",
+        "characterIds": ["annie", "kenny", "ymir", "reiner"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "주말에 급한 업무가 생겼지만 내 책임은 아니다. 나는?",
+    "options": [
+      {
+        "text": "불만은 있지만 내가 처리한다.",
+        "characterIds": ["mikasa"]
+      },
+      {
+        "text": "내 일이 아니므로 선을 긋는다.",
+        "characterIds": ["kenny", "reiner", "annie", "pieck"]
+      },
+      {
+        "text": "팀원 중 가능한 사람에게 넘긴다.",
+        "characterIds": ["jean", "colt", "historia"]
+      },
+      {
+        "text": "상사에게 맡기고 판단을 기다린다.",
+        "characterIds": ["levi", "zeke", "keith", "magath"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "낯선 사람들과 함께하는 회식 자리에서 나는?",
+    "options": [
+      {
+        "text": "먼저 말을 걸어 분위기를 띄운다.",
+        "characterIds": ["sasha", "jean", "hannes"]
+      },
+      {
+        "text": "자연스럽게 어울릴 타이밍을 본다.",
+        "characterIds": ["historia", "falco", "marco"]
+      },
+      {
+        "text": "한 사람과만 조용히 대화한다.",
+        "characterIds": ["mikasa", "colt", "reiner", "connie"]
+      },
+      {
+        "text": "가능하면 조용히 앉아 있는다.",
+        "characterIds": ["annie", "kenny", "pieck"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "야근을 피할 수 없는 상황에서 나는?",
+    "options": [
+      {
+        "text": "우선순위를 정해 빠르게 처리한다.",
+        "characterIds": ["levi", "armin", "erwin", "pieck"]
+      },
+      {
+        "text": "급한 것부터 손대며 진행한다.",
+        "characterIds": ["gabi", "porco", "jean"]
+      },
+      {
+        "text": "완벽히 끝내려 밤새 각오를 한다.",
+        "characterIds": ["mikasa"]
+      },
+      {
+        "text": "도와줄 사람을 찾는다.",
+        "characterIds": ["sasha", "falco"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "연인과 다툼 후, 섭섭한 감정이 생겼다. 나는?",
+    "options": [
+      {
+        "text": "직접 이야기해서 풀어야 한다고 생각한다.",
+        "characterIds": ["eren", "gabi", "marco"]
+      },
+      {
+        "text": "참는다. 곧 괜찮아질 거다.",
+        "characterIds": ["mikasa", "reiner", "colt"]
+      },
+      {
+        "text": "우회적으로 감정을 표현한다.",
+        "characterIds": ["ymir", "historia", "jean", "falco"]
+      },
+      {
+        "text": "메시지나 글로 간접적으로 전한다.",
+        "characterIds": ["annie", "pieck", "kenny", "zeke"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "중요 발표를 하루 전에 맡게 됐다. 나는?",
+    "options": [
+      {
+        "text": "계획을 세우고 요점을 정리한다.",
+        "characterIds": ["levi", "armin", "erwin", "pieck"]
+      },
+      {
+        "text": "윤곽만 잡고 즉흥적으로 말한다.",
+        "characterIds": ["floch", "porco", "jean", "hange"]
+      },
+      {
+        "text": "간단히 말하고 빠르게 끝낸다.",
+        "characterIds": ["kenny", "pieck", "annie"]
+      },
+      {
+        "text": "다른 사람과 분량을 나누는 걸 제안한다.",
+        "characterIds": ["colt", "historia", "falco"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "친구와 여행을 계획할 때 나는?",
+    "options": [
+      {
+        "text": "직접 조사하고 계획을 세운다.",
+        "characterIds": ["armin", "erwin", "levi", "hange"]
+      },
+      {
+        "text": "친구가 짜는 계획에 따른다.",
+        "characterIds": ["mikasa", "colt"]
+      },
+      {
+        "text": "큰 흐름만 정하고 디테일은 넘긴다.",
+        "characterIds": ["gabi", "jean", "sasha", "porco"]
+      },
+      {
+        "text": "즉흥 여행을 선호한다.",
+        "characterIds": ["annie", "ymir", "kenny"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "동료가 실수해서 문제가 생겼을 때 나는?",
+    "options": [
+      {
+        "text": "해결 방안을 먼저 찾는다.",
+        "characterIds": ["levi", "armin", "erwin", "historia"]
+      },
+      {
+        "text": "실수한 사람을 먼저 배려한다.",
+        "characterIds": ["falco", "sasha", "bertolt"]
+      },
+      {
+        "text": "분석해서 원인을 정확히 짚는다.",
+        "characterIds": ["pieck", "zeke", "mike"]
+      },
+      {
+        "text": "실수 재발 방지를 위해 단호하게 말한다.",
+        "characterIds": ["kenny", "annie"]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "새로운 팀에 합류했다. 내가 가장 먼저 하는 행동은?",
+    "options": [
+      {
+        "text": "주도적으로 인사를 건네고 분위기를 이끈다.",
+        "characterIds": ["sasha", "hannes", "gabi"]
+      },
+      {
+        "text": "팀 분위기를 먼저 살피고 자연스럽게 어울린다.",
+        "characterIds": ["historia", "marco", "falco"]
+      },
+      {
+        "text": "내 자리와 할 일을 파악하고 조용히 앉아있는다.",
+        "characterIds": ["mikasa", "colt", "connie"]
+      },
+      {
+        "text": "형식적인 인사만 하고 필요한 일만 한다.",
+        "characterIds": ["annie", "kenny", "pieck", "reiner"]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "연인과의 데이트 약속 당일, 갑자기 상대가 계획을 바꾸자고 한다면?",
+    "options": [
+      {
+        "text": "불편하지만 기분이 상하지 않게 맞춰준다.",
+        "characterIds": ["colt", "falco", "mikasa"]
+      },
+      {
+        "text": "이유를 듣고 납득되면 기꺼이 바꾼다.",
+        "characterIds": ["armin", "historia", "levi"]
+      },
+      {
+        "text": "계획을 바꾸면 기분이 나빠서 불편함을 표현한다.",
+        "characterIds": ["eren", "gabi", "porco"]
+      },
+      {
+        "text": "겉으로는 동의하지만 속으로는 약간 실망한다.",
+        "characterIds": ["annie", "ymir", "zeke", "reiner"]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "회의 중, 모두 조용할 때 누군가 의견을 내길 바란다면?",
+    "options": [
+      {
+        "text": "내가 먼저 분위기를 깨고 의견을 낸다.",
+        "characterIds": ["jean", "sasha", "erwin", "hange"]
+      },
+      {
+        "text": "누군가 먼저 말할 때까지 기다린다.",
+        "characterIds": ["mikasa"]
+      },
+      {
+        "text": "상황을 정리해서 차분히 제안한다.",
+        "characterIds": ["armin", "levi", "pieck"]
+      },
+      {
+        "text": "회의보다 메모나 준비가 더 편하다.",
+        "characterIds": ["annie", "kenny", "zeke"]
+      }
+    ]
+  }
+]

@@ -1,103 +1,132 @@
-import Image from "next/image";
+"use client";
+import React, { useState } from "react";
+import questions from "../lib/questions.json";
+import characters from "../lib/characters.json";
+
+interface QuestionType {
+  id: number;
+  question: string;
+  options: { text: string; characterIds: string[] }[];
+}
+
+interface CharacterType {
+  id: string;
+  name: string;
+  keywords: string[];
+  mbti: string[];
+  description: string;
+  detail: string;
+  image?: string[];
+}
+
+function Question({
+  question,
+  onAnswer,
+  step,
+  total,
+}: {
+  question: QuestionType;
+  onAnswer: (characterIds: string[]) => void;
+  step: number;
+  total: number;
+}) {
+  return (
+    <div className="w-full max-w-xl mx-auto flex flex-col gap-6 items-center">
+      <h2 className="text-lg font-bold text-center">
+        Q{step + 1}. {question.question}
+      </h2>
+      <ul className="w-full flex flex-col gap-3">
+        {question.options.map((opt, idx) => (
+          <li key={idx}>
+            <button
+              className="w-full py-3 px-4 rounded bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition text-base"
+              onClick={() => onAnswer(opt.characterIds)}
+            >
+              {opt.text}
+            </button>
+          </li>
+        ))}
+      </ul>
+      <p className="text-sm text-gray-500">
+        {step + 1} / {total}
+      </p>
+    </div>
+  );
+}
+
+function Result({ character }: { character: CharacterType | undefined }) {
+  if (!character) return <div className="text-center">결과를 찾을 수 없습니다.</div>;
+  return (
+    <div className="flex flex-col items-center gap-6 mt-10">
+      <h2 className="text-2xl font-bold mb-2">진격의 거인 세계관에 태어났다면 당신은?</h2>
+      <div className="flex flex-row gap-4 items-center justify-center">
+        {character.image && character.image.length > 0 ? (
+          character.image.map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              alt={character.name + " 이미지 " + (idx + 1)}
+              width={140}
+              height={140}
+              className="rounded-lg border object-cover"
+              style={{ aspectRatio: "1/1" }}
+            />
+          ))
+        ) : (
+          <div className="w-[200px] h-[200px] flex items-center justify-center bg-gray-200 rounded-lg border text-gray-500 text-xl">
+            이미지 없음
+          </div>
+        )}
+      </div>
+      <h3 className="text-xl font-semibold">{character.name}</h3>
+      <p className="text-base text-center max-w-md">{character.description}</p>
+      <p className="text-sm text-gray-600">MBTI: {character.mbti.join(", ")}</p>
+      <p className="text-sm text-gray-600">키워드: {character.keywords.join(", ")}</p>
+      <div className="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg border max-w-lg text-sm text-gray-700 dark:text-gray-300">
+        <b>상세 설명</b>
+        <br />
+        {character.detail}
+      </div>
+      <button
+        className="mt-6 px-6 py-2 rounded bg-blue-500 text-white hover:bg-blue-600"
+        onClick={() => window.location.reload()}
+      >
+        다시하기
+      </button>
+    </div>
+  );
+}
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [step, setStep] = useState<number>(0);
+  const [answers, setAnswers] = useState<string[]>([]);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  const handleAnswer = (characterIds: string[]) => {
+    setAnswers((prev) => [...prev, ...characterIds]);
+    setStep((prev) => prev + 1);
+  };
+
+  if (step >= (questions as QuestionType[]).length) {
+    // 결과 계산
+    const count: Record<string, number> = {};
+    answers.forEach((id) => {
+      count[id] = (count[id] || 0) + 1;
+    });
+    const sorted = Object.entries(count).sort((a, b) => b[1] - a[1]);
+    const topId = sorted[0]?.[0];
+    const character = (characters as CharacterType[]).find((c) => c.id === topId) as CharacterType | undefined;
+    return <Result character={character} />;
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white dark:bg-black">
+      <h1 className="text-3xl font-bold mb-8 text-center">어택온타이탄 성격 테스트</h1>
+      <Question
+        question={(questions as QuestionType[])[step]}
+        onAnswer={handleAnswer}
+        step={step}
+        total={(questions as QuestionType[]).length}
+      />
     </div>
   );
 }
