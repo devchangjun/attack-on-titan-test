@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import questions from "../lib/questions.json";
+import questionsRaw from "../lib/questions.json";
 import characters from "../lib/characters.json";
 import Image from "next/image";
 
 interface QuestionType {
   id: number;
   question: string;
-  options: { text: string; characterIds: string[] }[];
+  options: { text: string; characterScores: Record<string, number> }[];
 }
 
 interface CharacterType {
@@ -69,7 +69,7 @@ function Question({
   total,
 }: {
   question: QuestionType;
-  onAnswer: (characterIds: string[]) => void;
+  onAnswer: (characterScores: Record<string, number>) => void;
   step: number;
   total: number;
 }) {
@@ -83,7 +83,7 @@ function Question({
           <li key={idx}>
             <button
               className="w-full py-3 px-4 rounded bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition text-base"
-              onClick={() => onAnswer(opt.characterIds)}
+              onClick={() => onAnswer(opt.characterScores)}
             >
               {opt.text}
             </button>
@@ -197,12 +197,40 @@ function Result({ character }: { character: CharacterType | undefined }) {
   );
 }
 
+// Utility to sanitize characterScores (remove undefined values)
+type RawQuestion = {
+  id: number;
+  question: string;
+  options: { text: string; characterScores: Record<string, number | undefined> }[];
+};
+
+function sanitizeQuestions(raw: RawQuestion[]): QuestionType[] {
+  return raw.map((q) => ({
+    ...q,
+    options: q.options.map((opt) => ({
+      text: opt.text,
+      characterScores: Object.fromEntries(
+        Object.entries(opt.characterScores).filter(([, v]) => typeof v === "number" && v !== undefined)
+      ) as Record<string, number>,
+    })),
+  }));
+}
+
+const questions: QuestionType[] = sanitizeQuestions(questionsRaw as RawQuestion[]);
+
 export default function Home() {
   const [step, setStep] = useState<number>(-1);
-  const [answers, setAnswers] = useState<string[]>([]);
+  // 캐릭터별 점수 누적
+  const [scores, setScores] = useState<Record<string, number>>({});
 
-  const handleAnswer = (characterIds: string[]) => {
-    setAnswers((prev) => [...prev, ...characterIds]);
+  const handleAnswer = (characterScores: Record<string, number>) => {
+    setScores((prev) => {
+      const next = { ...prev };
+      for (const [id, score] of Object.entries(characterScores)) {
+        next[id] = (next[id] || 0) + score;
+      }
+      return next;
+    });
     setStep((prev) => prev + 1);
   };
 
@@ -210,28 +238,20 @@ export default function Home() {
     return <Intro onStart={() => setStep(0)} />;
   }
 
-  if (step >= (questions as QuestionType[]).length) {
+  if (step >= questions.length) {
     // 결과 계산
-    const count: Record<string, number> = {};
-    answers.forEach((id) => {
-      count[id] = (count[id] || 0) + 1;
-    });
-    console.log(count);
-    const sorted = Object.entries(count).sort((a, b) => b[1] - a[1]);
+    const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+    console.log(sorted);
     const topId = sorted[0]?.[0];
     const character = (characters as CharacterType[]).find((c) => c.id === topId) as CharacterType | undefined;
+
     return <Result character={character} />;
   }
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white dark:bg-black">
       <h1 className="text-3xl font-bold mb-8 text-center">나는 진격의거인 세계관에 태어났다면 누구였을까?</h1>
-      <Question
-        question={(questions as QuestionType[])[step]}
-        onAnswer={handleAnswer}
-        step={step}
-        total={(questions as QuestionType[]).length}
-      />
+      <Question question={questions[step]} onAnswer={handleAnswer} step={step} total={questions.length} />
     </div>
   );
 }
