@@ -184,7 +184,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white dark:bg-black">
-      <h1 className="text-3xl font-bold mb-8 text-center">어택온타이탄 성격 테스트</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">나는 진격의거인 세계관에 태어났다면 누구였을까?</h1>
       <Question
         question={(questions as QuestionType[])[step]}
         onAnswer={handleAnswer}
