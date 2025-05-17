@@ -239,7 +239,7 @@ const questions: QuestionType[] = sanitizeQuestions(questionsRaw as RawQuestion[
 
 export default function Home() {
   const [step, setStep] = useState<number>(-1);
-  // 캐릭터별 점수 누적
+  // 캐릭터별 점수 누적.
   const [scores, setScores] = useState<Record<string, number>>({});
 
   const handleAnswer = (characterScores: Record<string, number>) => {
