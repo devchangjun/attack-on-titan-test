@@ -37,7 +37,7 @@ function Intro({ onStart }: { onStart: () => void }) {
           height={160}
           className="w-40 h-40 object-cover rounded-full shadow-lg mb-6 border-4 border-white"
         />
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">
           어떤 <span className="text-yellow-400">진격의 거인</span> 캐릭터와 닮았을까?
         </h1>
         <p className="text-lg text-gray-200 mb-8 text-center">
@@ -250,7 +250,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white dark:bg-black">
-      <h1 className="text-3xl font-bold mb-8 text-center">나는 진격의거인 세계관에 태어났다면 누구였을까?</h1>
+      <h1 className="text-2xl font-bold mb-8 text-center">나는 진격의거인 세계관에 태어났다면 누구였을까?</h1>
       <Question question={questions[step]} onAnswer={handleAnswer} step={step} total={questions.length} />
     </div>
   );
