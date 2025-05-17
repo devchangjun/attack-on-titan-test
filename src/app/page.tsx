@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import questions from "../lib/questions.json";
 import characters from "../lib/characters.json";
+import Image from "next/image";
 
 interface QuestionType {
   id: number;
@@ -20,9 +21,8 @@ interface CharacterType {
 }
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   interface Window {
-    Kakao: any;
+    Kakao: unknown;
   }
 }
 
@@ -68,20 +68,22 @@ function Result({ character }: { character: CharacterType | undefined }) {
     script.src = "https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js";
     script.async = true;
     script.onload = () => {
-      if (window.Kakao && !window.Kakao.isInitialized()) {
-        window.Kakao.init("YOUR_KAKAO_APP_KEY");
+      const kakao = window.Kakao as { isInitialized?: () => boolean; init?: (key: string) => void };
+      if (kakao && typeof kakao.isInitialized === "function" && kakao.init && !kakao.isInitialized()) {
+        kakao.init("YOUR_KAKAO_APP_KEY");
       }
     };
     document.body.appendChild(script);
   }, []);
 
   const handleKakaoShare = () => {
-    if (!window.Kakao || !window.Kakao.Share) {
+    if (!window.Kakao || typeof (window.Kakao as { Share?: unknown }).Share !== "object") {
       alert("카카오톡 공유 기능을 사용할 수 없습니다. 새로고침 후 다시 시도해 주세요.");
       return;
     }
     if (!character) return;
-    window.Kakao.Share.sendDefault({
+    const kakao = window.Kakao as { Share: { sendDefault: (args: unknown) => void } };
+    kakao.Share.sendDefault({
       objectType: "feed",
       content: {
         title: `나는 ${character.name} 타입!`,
@@ -116,7 +118,7 @@ function Result({ character }: { character: CharacterType | undefined }) {
       <div className="flex flex-row gap-2 items-center justify-center w-full overflow-x-auto pb-2">
         {character.image && character.image.length > 0 ? (
           character.image.map((src, idx) => (
-            <img
+            <Image
               key={idx}
               src={src}
               alt={character.name + " 이미지 " + (idx + 1)}
