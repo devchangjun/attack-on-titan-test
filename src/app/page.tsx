@@ -176,6 +176,7 @@ export default function Home() {
     answers.forEach((id) => {
       count[id] = (count[id] || 0) + 1;
     });
+    console.log(count);
     const sorted = Object.entries(count).sort((a, b) => b[1] - a[1]);
     const topId = sorted[0]?.[0];
     const character = (characters as CharacterType[]).find((c) => c.id === topId) as CharacterType | undefined;
