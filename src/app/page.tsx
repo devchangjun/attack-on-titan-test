@@ -74,7 +74,7 @@ function Intro({ onStart }: { onStart: () => void }) {
         </div>
         <div className="mt-8 text-xs text-gray-400 text-center">
           ※ 본 테스트는 팬메이드이며, 공식 결과와 다를 수 있습니다.
-          <br />ⓒ Hajime Isayama / Kodansha / WIT Studio / MAPPA
+          <br />ⓒ Hajime Isayama / Kodansha / WIT Studio / MAPPA / 웹공방
         </div>
       </div>
     </div>
