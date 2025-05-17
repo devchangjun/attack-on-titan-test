@@ -1,288 +1,209 @@
 [
   {
-    "id": 1,
-    "question": "나는 A음식을 먹고 싶어 하는데 친구는 메뉴를 먹고 싶어한다. 이럴 때 나는?",
-    "options": [
-      {
-        "text": "내 의견을 말하고 설득해본다.",
-        "characterScores": { "eren": 3, "zeke": 2, "levi": 1, "reiner": 2, "hannes": 2 }
-      },
-      {
-        "text": "친구 의견을 존중하고 다른 메뉴를 먹는다.",
-        "characterScores": { "armin": 3, "hannes": 3, "zeke": 2, "hange": 1, "bertolt": 2 }
-      },
-      {
-        "text": "중간 메뉴를 찾아 타협한다.",
-        "characterScores": { "erwin": 2, "gabi": 2, "jean": 2, "reiner": 2, "armin": 1 }
-      },
-      {
-        "text": "각자 먹고 싶은 걸 시킨다.",
-        "characterScores": { "annie": 1, "ymir": 2, "connie": 2, "sasha": 2 }
-      }
-    ]
+    "id": "eren",
+    "name": "에렌 예거",
+    "keywords": ["충동적", "열정적", "고집"],
+    "mbti": ["ISFP"],
+    "description": "정의감이 강하고, 감정에 따라 움직이며 큰 목표를 향해 직진",
+    "detail": "에렌은 강한 집념과 열정을 가진 인물로, 어린 시절부터 벽 밖 세상에 대한 동경과 자유에 대한 갈망이 컸다. 자신의 신념을 위해 수단과 방법을 가리지 않으며, 때로는 충동적이고 극단적인 선택도 마다하지 않는다. 친구와 동료를 위해서라면 목숨을 걸고, 자신이 옳다고 믿는 길을 끝까지 밀고 나간다. 성장 과정에서 이상과 현실, 복수와 희생 사이에서 내적 갈등을 겪으며 점차 복잡한 인물로 변화한다. 그의 결단력과 추진력은 주변 인물들에게도 큰 영향을 미친다.",
+    "image": ["/images/eren/1.webp", "/images/eren/2.webp", "/images/eren/3.webp"]
   },
   {
-    "id": 2,
-    "question": "팀 프로젝트에서 팀장의 의견과 내 아이디어가 충돌했다. 나는?",
-    "options": [
-      {
-        "text": "논리적으로 설득하며 내 아이디어를 관철시킨다.",
-        "characterScores": { "erwin": 3, "eren": 2, "hange": 2, "bertolt": 1, "mikasa": 1 }
-      },
-      {
-        "text": "일단 팀장의 의견을 따르고 상황을 지켜본다.",
-        "characterScores": { "hange": 3, "colt": 2, "falco": 2, "historia": 1, "armin": 2 }
-      },
-      {
-        "text": "팀원들과 조율하며 절충안을 제안한다.",
-        "characterScores": { "bertolt": 3, "jean": 1, "reiner": 2, "magath": 1, "kenny": 1 }
-      },
-      {
-        "text": "대화를 피하고 조용히 내 역할만 한다.",
-        "characterScores": { "annie": 2, "levi": 2, "ymir": 2, "porco": 1, "mikasa": 1 }
-      }
-    ]
+    "id": "mikasa",
+    "name": "미카사 아커만",
+    "keywords": ["충성심", "과묵", "강인"],
+    "mbti": ["ISTJ"],
+    "description": "감정보다는 행동, 중요한 사람을 위해 목숨도 아끼지 않음",
+    "detail": "미카사는 어린 시절의 트라우마로 인해 내면적으로는 상처가 깊지만, 겉으로는 매우 냉정하고 강인하다. 에렌을 지키는 것이 삶의 이유였으나, 점차 자신의 삶과 선택에 대해 고민하게 된다. 최고의 전투 실력과 침착함을 갖췄으며, 동료를 위해서라면 어떤 위험도 감수한다. 말보다는 행동으로 감정을 표현하며, 책임감과 충성심이 매우 강하다. 시리즈 후반부에는 자신의 신념과 에렌에 대한 감정 사이에서 성장과 변화를 보여준다.",
+    "image": ["/images/mikasa/1.avif", "/images/mikasa/2.jpg", "/images/mikasa/3.jpg"]
   },
   {
-    "id": 3,
-    "question": "친구가 회사 그만두고 싶다고 고민을 털어놓는다. 나는?",
-    "options": [
-      {
-        "text": "진심으로 공감하고 위로한다.",
-        "characterScores": { "bertolt": 3, "armin": 2, "historia": 2, "sasha": 1 }
-      },
-      {
-        "text": "묵묵히 듣고 필요한 말만 한다.",
-        "characterScores": { "levi": 3, "zeke": 2, "annie": 2, "colt": 1 }
-      },
-      {
-        "text": "현실적인 조언을 해준다.",
-        "characterScores": { "erwin": 3, "magath": 2, "pieck": 2, "jean": 1, "armin": 1 }
-      },
-      {
-        "text": "그럴 수도 있다며 대화를 넘긴다.",
-        "characterScores": { "ymir": 3, "porco": 2, "connie": 2, "kenny": 1 }
-      }
-    ]
+    "id": "armin",
+    "name": "아르민 알레르트",
+    "keywords": ["지략형", "공감능력", "희생정신"],
+    "mbti": ["INFJ"],
+    "description": "타인의 감정과 상황을 빠르게 이해, 전략적으로 문제 해결",
+    "detail": "아르민은 어릴 적부터 약하고 소심한 편이었지만, 뛰어난 두뇌와 전략적 사고로 동료들에게 없어서는 안 될 존재가 된다. 직접 싸우기보다는 정보 수집과 상황 분석, 설득과 중재에서 탁월한 능력을 보인다. 벽 밖 세계에 대한 호기심과 이상을 품고 있으며, 인류의 미래를 위해 자신의 한계를 극복하려 노력한다. 위기 상황에서 과감한 결단을 내릴 줄 아는 용기도 갖췄다. 항상 타인의 감정과 입장을 배려하며, 동료를 위해 희생하는 모습을 자주 보인다.",
+    "image": ["/images/armin/1.webp", "/images/armin/2.webp", "/images/armin/3.webp"]
   },
   {
-    "id": 4,
-    "question": "주말에 급한 업무가 생겼지만 내 책임은 아니다. 나는?",
-    "options": [
-      {
-        "text": "불만은 있지만 내가 처리한다.",
-        "characterScores": { "armin": 3, "reiner": 2, "colt": 2, "jean": 1, "kenny": 1 }
-      },
-      {
-        "text": "내 일이 아니므로 선을 긋는다.",
-        "characterScores": { "annie": 2, "porco": 2, "ymir": 2, "kenny": 1, "mikasa": 1 }
-      },
-      {
-        "text": "팀원 중 가능한 사람에게 넘긴다.",
-        "characterScores": { "eren": 2, "gabi": 2, "connie": 2, "sasha": 2 }
-      },
-      {
-        "text": "상사에게 맡기고 판단을 기다린다.",
-        "characterScores": { "falco": 2, "historia": 2, "zeke": 2, "pieck": 2 }
-      }
-    ]
+    "id": "levi",
+    "name": "리바이 아커만",
+    "keywords": ["냉철", "효율주의", "리더십"],
+    "mbti": ["ISTP"],
+    "description": "감정을 배제한 판단력, 뛰어난 실전 능력을 갖춘 완벽주의자",
+    "detail": "‘인류 최강의 병사’로 불릴 만큼 압도적인 전투력을 자랑한다. 겉으로는 냉정하고 무뚝뚝하지만, 동료에 대한 깊은 책임감과 연민을 내면에 품고 있다. 효율과 실리를 중시하며, 감정보다 이성을 우선시한다. 청결에 집착하는 등 완벽주의적 성향도 강하다. 리더로서의 결단력과 통찰력, 위기 대처 능력이 뛰어나며, 동료의 희생에 누구보다 무거운 책임감을 느낀다. 자신의 약점과 과거를 받아들이며, 인간적인 면모도 종종 드러낸다.",
+    "image": ["/images/levi/1.png", "/images/levi/2.jpg", "/images/levi/3.jpg"]
   },
   {
-    "id": 5,
-    "question": "낯선 사람들과 함께하는 회식 자리에서 나는?",
-    "options": [
-      {
-        "text": "먼저 말을 걸어 분위기를 띄운다.",
-        "characterScores": { "sasha": 2, "hange": 2, "connie": 2, "jean": 1, "hannes": 1 }
-      },
-      {
-        "text": "자연스럽게 어울릴 타이밍을 본다.",
-        "characterScores": { "reiner": 3, "historia": 1, "armin": 2, "pieck": 1 }
-      },
-      {
-        "text": "한 사람과만 조용히 대화한다.",
-        "characterScores": { "kenny": 2, "annie": 1, "falco": 2, "colt": 2, "mikasa": 1 }
-      },
-      {
-        "text": "가능하면 조용히 앉아 있는다.",
-        "characterScores": { "levi": 2, "ymir": 1, "porco": 2, "magath": 2 }
-      }
-    ]
+    "id": "hange",
+    "name": "한지 조에",
+    "keywords": ["호기심", "광기", "열정"],
+    "mbti": ["ENTP"],
+    "description": "새로운 것에 대한 집착, 실험정신, 엉뚱하지만 천재적 사고",
+    "detail": "거인에 대한 집착적 호기심과 실험정신을 가진 조사병단의 과학자이자 리더. 감정 표현이 풍부하고 에너지 넘치며, 때로는 엉뚱하고 광기 어린 모습도 보인다. 하지만 위기 상황에서는 누구보다 침착하게 합리적 결정을 내릴 줄 아는 리더십을 갖췄다. 동료들과의 소통을 중시하며, 새로운 지식을 추구하는 데 두려움이 없다. 유머러스하면서도 진지한 면모가 공존하는 인물.",
+    "image": ["/images/hange/1.webp", "/images/hange/2.webp", "/images/hange/3.webp"]
   },
   {
-    "id": 6,
-    "question": "야근을 피할 수 없는 상황에서 나는?",
-    "options": [
-      {
-        "text": "우선순위를 정해 빠르게 처리한다.",
-        "characterScores": { "erwin": 3, "magath": 2, "pieck": 2, "hannes": 1, "gabi": 1 }
-      },
-      {
-        "text": "급한 것부터 손대며 진행한다.",
-        "characterScores": { "eren": 2, "reiner": 2, "gabi": 2, "connie": 2, "hange": 1, "armin": 2 }
-      },
-      {
-        "text": "완벽히 끝내려 밤새 각오를 한다.",
-        "characterScores": { "levi": 3, "kenny": 2, "annie": 2, "colt": 1 }
-      },
-      {
-        "text": "도와줄 사람을 찾는다.",
-        "characterScores": { "bertolt": 3, "falco": 2, "historia": 2, "sasha": 2 }
-      }
-    ]
+    "id": "erwin",
+    "name": "엘빈 스미스",
+    "keywords": ["리더십", "희생정신", "결단력"],
+    "mbti": ["ENTJ"],
+    "description": "큰 그림을 위해 자신도 희생하는 전략적 지도자형",
+    "detail": "조사병단의 13대 단장으로, 냉정한 판단력과 결단력을 갖춘 전략가. 인류의 미래와 진실을 위해 자신의 목숨조차 아끼지 않는다. 동료들의 신뢰를 받는 카리스마 있는 리더로, 때로는 냉혹한 선택도 감수한다. 어린 시절 아버지의 죽음 이후 진실을 밝히겠다는 집념이 그의 인생을 이끈다. 인간적인 따뜻함과 냉철한 이성, 그리고 희생정신이 공존하는 인물.",
+    "image": ["/images/erwin/1.webp", "/images/erwin/2.webp", "/images/erwin/3.webp"]
   },
   {
-    "id": 7,
-    "question": "연인과 다툼 후, 섭섭한 감정이 생겼다. 나는?",
-    "options": [
-      {
-        "text": "직접 이야기해서 풀어야 한다고 생각한다.",
-        "characterScores": { "eren": 2, "bertolt": 2, "jean": 2, "historia": 1 }
-      },
-      {
-        "text": "참는다. 곧 괜찮아질 거다.",
-        "characterScores": { "mikasa": 3, "falco": 2, "colt": 2, "reiner": 1 }
-      },
-      {
-        "text": "우회적으로 감정을 표현한다.",
-        "characterScores": { "pieck": 2, "annie": 2, "sasha": 2, "connie": 2 }
-      },
-      {
-        "text": "메시지나 글로 간접적으로 전한다.",
-        "characterScores": { "ymir": 2, "porco": 2, "gabi": 2, "kenny": 2 }
-      }
-    ]
+    "id": "zeke",
+    "name": "지크 예거",
+    "keywords": ["냉소적", "이성적", "이상주의"],
+    "mbti": ["INTP"],
+    "description": "목적을 위해 냉정한 판단을 내리는 사색가형 이상주의자",
+    "detail": "마레의 전사이자 에렌의 이복형. 뛰어난 지략과 냉철함으로 목적을 위해 수단을 가리지 않는다. 겉으로는 냉소적이고 이성적이지만, 인류의 미래에 대한 이상과 신념이 내면에 있다. 가족과 동료, 그리고 세계에 대한 복잡한 감정과 갈등을 안고 있으며, 자신의 신념을 위해 때로는 잔혹한 선택도 감수한다.",
+    "image": ["/images/zeke/1.webp", "/images/zeke/2.webp", "/images/zeke/3.jpg"]
   },
   {
-    "id": 8,
-    "question": "중요 발표를 하루 전에 맡게 됐다. 나는?",
-    "options": [
-      {
-        "text": "계획을 세우고 요점을 정리한다.",
-        "characterScores": { "zeke": 3, "erwin": 2, "magath": 2, "hange": 1 }
-      },
-      {
-        "text": "윤곽만 잡고 즉흥적으로 말한다.",
-        "characterScores": { "eren": 2, "jean": 1, "porco": 2, "connie": 1, "hannes": 1 }
-      },
-      {
-        "text": "간단히 말하고 빠르게 끝낸다.",
-        "characterScores": { "levi": 2, "annie": 1, "ymir": 1, "gabi": 2 }
-      },
-      {
-        "text": "다른 사람과 분량을 나누는 걸 제안한다.",
-        "characterScores": { "historia": 1, "falco": 2, "sasha": 2, "colt": 2 }
-      }
-    ]
+    "id": "reiner",
+    "name": "라이너 브라운",
+    "keywords": ["이중성", "책임감", "내적갈등"],
+    "mbti": ["ISFJ"],
+    "description": "속내는 부드럽고 책임감 강하지만, 현실과 정체성 사이 갈등",
+    "detail": "마레의 전사이자 조사병단의 동기. 겉으로는 강인하고 책임감 있는 리더지만, 내면적으로는 정체성 혼란과 죄책감에 시달린다. 동료와 임무 사이에서 끊임없이 갈등하며, 자신이 짊어진 죄와 책임을 무겁게 받아들인다. 이중적인 삶 속에서 자기희생과 인간적인 약함을 동시에 보여주는 복합적인 캐릭터.",
+    "image": ["/images/reiner/1.webp", "/images/reiner/2.webp", "/images/reiner/3.webp"]
   },
   {
-    "id": 9,
-    "question": "친구와 여행을 계획할 때 나는?",
-    "options": [
-      {
-        "text": "직접 조사하고 계획을 세운다.",
-        "characterScores": { "erwin": 3, "magath": 2, "pieck": 2, "armin": 1 }
-      },
-      {
-        "text": "친구가 짜는 계획에 따른다.",
-        "characterScores": { "mikasa": 3, "falco": 2, "historia": 2, "colt": 1 }
-      },
-      {
-        "text": "큰 흐름만 정하고 디테일은 넘긴다.",
-        "characterScores": { "jean": 1, "connie": 2, "sasha": 2, "reiner": 2, "hannes": 2 }
-      },
-      {
-        "text": "즉흥 여행을 선호한다.",
-        "characterScores": { "eren": 3, "ymir": 2, "gabi": 2, "porco": 1, "kenny": 1 }
-      }
-    ]
+    "id": "bertolt",
+    "name": "베르톨트 후버",
+    "keywords": ["소극적", "감정적", "충직"],
+    "mbti": ["INFP"],
+    "description": "주변에 휘둘리지만 내면의 감정은 깊고 복잡함",
+    "detail": "마레의 전사이자 초대형 거인. 겉으로는 소극적이고 조용하지만, 내면에는 깊은 감정과 갈등이 있다. 동료를 배신해야 하는 상황에서 죄책감과 슬픔을 감추지 못하며, 자신의 역할과 의무에 충실하려 노력한다. 타인의 감정에 민감하며, 주변 상황에 쉽게 영향을 받는 섬세한 인물.",
+    "image": ["/images/bertolt/1.webp", "/images/bertolt/2.webp", "/images/bertolt/3.png"]
   },
   {
-    "id": 10,
-    "question": "동료가 실수해서 문제가 생겼을 때 나는?",
-    "options": [
-      {
-        "text": "해결 방안을 먼저 찾는다.",
-        "characterScores": { "zeke": 3, "erwin": 2, "pieck": 2, "hannes": 1 }
-      },
-      {
-        "text": "실수한 사람을 먼저 배려한다.",
-        "characterScores": { "falco": 2, "historia": 1, "jean": 2, "sasha": 1 }
-      },
-      {
-        "text": "분석해서 원인을 정확히 짚는다.",
-        "characterScores": { "hange": 3, "magath": 2, "annie": 2, "gabi": 1 }
-      },
-      {
-        "text": "실수 재발 방지를 위해 단호하게 말한다.",
-        "characterScores": { "eren": 2, "gabi": 2, "porco": 2, "kenny": 2 }
-      }
-    ]
+    "id": "annie",
+    "name": "애니 레온하트",
+    "keywords": ["냉소적", "고립형", "무뚝뚝"],
+    "mbti": ["ISTP"],
+    "description": "감정을 잘 표현하지 않고, 이성적으로 판단, 자기중심적",
+    "detail": "마레의 전사이자 여성형 거인. 감정을 드러내지 않고, 타인과 거리를 두는 경향이 있다. 뛰어난 격투 실력과 냉정한 판단력을 갖췄으며, 자신만의 원칙과 신념에 따라 행동한다. 내면적으로는 외로움과 갈등을 안고 있으며, 자기 자신을 지키기 위해 타인과의 관계를 최소화한다.",
+    "image": ["/images/annie/1.webp", "/images/annie/2.webp", "/images/annie/3.webp"]
   },
   {
-    "id": 11,
-    "question": "새로운 팀에 합류했다. 내가 가장 먼저 하는 행동은?",
-    "options": [
-      {
-        "text": "주도적으로 인사를 건네고 분위기를 이끈다.",
-        "characterScores": { "hange": 3, "jean": 2, "sasha": 2, "connie": 1 }
-      },
-      {
-        "text": "팀 분위기를 먼저 살피고 자연스럽게 어울린다.",
-        "characterScores": { "zeke": 3, "armin": 2, "historia": 1, "pieck": 1 }
-      },
-      {
-        "text": "내 자리와 할 일을 파악하고 조용히 앉아있는다.",
-        "characterScores": { "mikasa": 2, "annie": 1, "colt": 2, "magath": 2 }
-      },
-      {
-        "text": "형식적인 인사만 하고 필요한 일만 한다.",
-        "characterScores": { "levi": 2, "ymir": 2, "porco": 2, "kenny": 2 }
-      }
-    ]
+    "id": "jean",
+    "name": "장 키르슈타인",
+    "keywords": ["현실적", "솔직", "책임감"],
+    "mbti": ["ESTJ"],
+    "description": "현실을 직시, 솔직한 태도와 책임감을 갖춘 실용주의자",
+    "detail": "초기에는 이기적이고 현실적인 성향이 강했으나, 점차 리더십과 책임감을 갖춘 인물로 성장한다. 상황을 냉철하게 분석하고, 동료들과의 소통을 중시한다. 솔직하고 직설적인 언행으로 때로는 갈등을 빚기도 하지만, 궁극적으로는 모두의 생존과 공동체를 위해 행동한다.",
+    "image": ["/images/jean/1.webp", "/images/jean/2.webp", "/images/jean/3.webp"]
   },
   {
-    "id": 12,
-    "question": "연인과의 데이트 약속 당일, 갑자기 상대가 계획을 바꾸자고 한다면?",
-    "options": [
-      {
-        "text": "불편하지만 기분이 상하지 않게 맞춰준다.",
-        "characterScores": { "historia": 2, "hannes": 2, "falco": 2, "colt": 1 }
-      },
-      {
-        "text": "이유를 듣고 납득되면 기꺼이 바꾼다.",
-        "characterScores": { "mikasa": 3, "reiner": 2, "pieck": 2, "jean": 1 }
-      },
-      {
-        "text": "계획을 바꾸면 기분이 나빠서 불편함을 표현한다.",
-        "characterScores": { "jean": 2, "sasha": 2, "hange": 2, "kenny": 2, "connie": 1 }
-      },
-      {
-        "text": "겉으로는 동의하지만 속으로는 약간 실망한다.",
-        "characterScores": { "levi": 2, "annie": 2, "colt": 2, "magath": 2 }
-      }
-    ]
+    "id": "connie",
+    "name": "코니 스프링어",
+    "keywords": ["낙천적", "충직", "단순"],
+    "mbti": ["ESFP"],
+    "description": "긍정적이고 단순, 주변 사람을 잘 챙기는 친화력",
+    "detail": "밝고 낙천적인 성격으로, 어려운 상황에서도 유머와 긍정적인 태도를 잃지 않는다. 동료를 잘 챙기며, 충직하고 솔직하다. 복잡한 생각보다는 직감과 감정에 따라 행동하는 편이다. 인간적인 매력과 따뜻함으로 팀 분위기를 밝게 만든다.",
+    "image": ["/images/connie/1.webp", "/images/connie/2.webp", "/images/connie/3.webp"]
   },
   {
-    "id": 13,
-    "question": "회의 중, 모두 조용할 때 누군가 의견을 내길 바란다면?",
-    "options": [
-      {
-        "text": "내가 먼저 분위기를 깨고 의견을 낸다.",
-        "characterScores": { "eren": 2, "jean": 1, "hannes": 4, "gabi": 1 }
-      },
-      {
-        "text": "누군가 먼저 말할 때까지 기다린다.",
-        "characterScores": { "mikasa": 2, "annie": 2, "historia": 2, "colt": 2 }
-      },
-      {
-        "text": "상황을 정리해서 차분히 제안한다.",
-        "characterScores": { "bertolt": 3, "erwin": 2, "pieck": 2, "magath": 1 }
-      },
-      {
-        "text": "회의보다 메모나 준비가 더 편하다.",
-        "characterScores": { "levi": 2, "falco": 2, "ymir": 2, "porco": 2, "connie": 1 }
-      }
-    ]
+    "id": "sasha",
+    "name": "사샤 블라우스",
+    "keywords": ["유쾌함", "식탐", "따뜻함"],
+    "mbti": ["ENFP"],
+    "description": "밝고 유쾌, 타인을 따뜻하게 대하는 인간미 넘치는 타입",
+    "detail": "밝고 유쾌하며, 음식에 대한 집착이 강한 독특한 인물. 어려운 상황에서도 특유의 긍정 에너지로 동료들에게 힘이 된다. 타인을 잘 배려하고, 따뜻한 마음씨를 지녔다. 전투에서도 뛰어난 활약을 보여주며, 소박한 행복을 소중히 여긴다.",
+    "image": ["/images/sasha/1.webp", "/images/sasha/2.webp", "/images/sasha/3.webp"]
+  },
+  {
+    "id": "historia",
+    "name": "히스토리아 레이스",
+    "keywords": ["상냥함", "내성적", "결단력"],
+    "mbti": ["ISFP"],
+    "description": "내성적이지만 중요한 순간 결단을 내리는 섬세한 리더",
+    "detail": "왕가의 후손이자, 내성적이고 상냥한 성격을 가졌다. 처음에는 소극적이고 타인의 기대에 맞추려 했으나, 점차 자신만의 신념과 결단력을 갖춘 리더로 성장한다. 동료와 국민을 위해 희생을 감수하며, 인간적인 따뜻함과 강인함을 동시에 지닌 인물.",
+    "image": ["/images/historia/1.webp", "/images/historia/2.png", "/images/historia/3.webp"]
+  },
+  {
+    "id": "ymir",
+    "name": "유미르",
+    "keywords": ["냉소적", "자유분방", "솔직"],
+    "mbti": ["ISTP"],
+    "description": "규칙에 얽매이지 않고, 솔직하며 자유로운 영혼",
+    "detail": "자유분방하고 솔직한 성격으로, 타인의 시선이나 규범에 얽매이지 않는다. 과거의 아픔과 비밀을 안고 있지만, 현재를 즐기며 자신의 욕망에 충실하다. 히스토리아를 진심으로 아끼며, 중요한 순간에는 희생도 마다하지 않는다.",
+    "image": ["/images/ymir/1.webp", "/images/ymir/2.webp"]
+  },
+  {
+    "id": "kenny",
+    "name": "케니 아커만",
+    "keywords": ["냉정", "계산적", "현실주의"],
+    "mbti": ["ESTP"],
+    "description": "감정에 휘둘리지 않고, 현실적으로 상황 판단",
+    "detail": "중앙헌병단의 암살자 출신으로, 냉정하고 계산적인 현실주의자. 목적을 위해 수단과 방법을 가리지 않으며, 감정에 휘둘리지 않는다. 리바이와의 특별한 관계를 통해 인간적인 면모도 드러낸다. 생존과 권력에 대한 집착이 강하다.",
+    "image": ["/images/kenny/1.webp", "/images/kenny/2.webp", "/images/kenny/3.webp"]
+  },
+  {
+    "id": "pieck",
+    "name": "피크 핑거",
+    "keywords": ["지략형", "침착", "냉정"],
+    "mbti": ["INTJ"],
+    "description": "침착하고 분석적, 상황을 냉정하게 파악하는 전략가",
+    "detail": "마레의 전사로, 매우 침착하고 분석적인 성격을 가졌다. 위기 상황에서도 냉정하게 판단하며, 전략적 사고가 뛰어나다. 동료를 아끼는 마음과 임무에 대한 충성심이 공존한다. 유연한 사고와 빠른 적응력이 장점.",
+    "image": ["/images/pieck/1.webp", "/images/pieck/2.webp", "/images/pieck/3.webp"]
+  },
+  {
+    "id": "porco",
+    "name": "포르코 갤리아드",
+    "keywords": ["직설적", "자존심", "용감"],
+    "mbti": ["ESTP"],
+    "description": "솔직하고 직설적, 위험을 두려워하지 않는 행동파",
+    "detail": "마레의 전사로, 자존심이 강하고 직설적인 성격이다. 위험을 두려워하지 않으며, 본능적이고 과감한 행동을 선호한다. 동료와의 경쟁심이 강하며, 자신의 능력에 대한 자부심이 크다.",
+    "image": ["/images/porco/1.webp", "/images/porco/2.webp", "/images/porco/3.webp"]
+  },
+  {
+    "id": "hannes",
+    "name": "한네스",
+    "keywords": ["유쾌함", "책임감", "인간적"],
+    "mbti": ["ESFJ"],
+    "description": "유머러스하고 따뜻, 책임감 있게 주변을 챙기는 타입",
+    "detail": "유쾌하고 인간적인 성격으로, 에렌 가족과 깊은 인연이 있다. 위기 상황에서는 책임감 있게 행동하며, 동료와 후배를 잘 챙긴다. 따뜻한 마음과 유머로 주변에 긍정적인 영향을 준다.",
+    "image": ["/images/hannes/1.webp", "/images/hannes/2.png"]
+  },
+  {
+    "id": "gabi",
+    "name": "가비 브라운",
+    "keywords": ["신념", "충동적", "적극적"],
+    "mbti": ["ESTJ"],
+    "description": "신념이 강하고, 행동력이 뛰어나며 목표를 향해 돌진",
+    "detail": "마레의 소년병으로, 강한 신념과 자신감, 적극적인 태도를 지녔다. 목표를 위해 돌진하는 추진력이 강하며, 때로는 충동적이고 직설적이다. 성장 과정에서 자신의 신념과 현실 사이에서 갈등을 겪으며 점차 성숙해진다.",
+    "image": ["/images/gabi/1.webp", "/images/gabi/2.webp", "/images/gabi/3.webp"]
+  },
+  {
+    "id": "falco",
+    "name": "팔코 글라이스",
+    "keywords": ["순수", "배려", "성장"],
+    "mbti": ["ENFJ"],
+    "description": "남을 배려하고, 순수하며 점차 성장하는 타입",
+    "detail": "마레의 소년병으로, 순수하고 배려심이 깊다. 동료와 가족을 위해 헌신하며, 어려운 상황에서도 희망을 잃지 않는다. 성장과 변화의 과정이 두드러지는 인물로, 점차 용기와 결단력을 갖추게 된다.",
+    "image": ["/images/falco/1.webp", "/images/falco/2.webp"]
+  },
+  {
+    "id": "colt",
+    "name": "콜트 글라이스",
+    "keywords": ["책임감", "보호자", "침착"],
+    "mbti": ["ISFJ"],
+    "description": "동생을 아끼고, 침착하며 책임감이 강한 보호자형",
+    "detail": "팔코의 형으로, 동생과 동료를 보호하는 책임감이 강하다. 침착하고 이성적으로 상황을 판단하며, 위기 상황에서도 냉정함을 잃지 않는다. 가족과 임무 모두에 충실한 인물.",
+    "image": ["/images/colt/1.webp", "/images/colt/2.webp", "/images/colt/3.webp"]
+  },
+  {
+    "id": "magath",
+    "name": "테오 마가트",
+    "keywords": ["책임감", "현실주의", "지도자", "냉정"],
+    "mbti": ["ESTJ"],
+    "description": "마레 군의 총사령관으로, 냉정하고 현실적이며 책임감이 강한 지도자. 상황을 객관적으로 파악하고, 대의와 조직을 위해 결단을 내리는 타입.",
+    "detail": "마레 군의 총사령관으로, 냉철하고 현실적인 판단력과 강한 책임감을 지녔다. 조직과 부하를 위해 때로는 냉혹한 결단도 감수하며, 대의와 질서를 중시한다. 변화하는 시대 속에서 자신의 신념과 현실 사이에서 균형을 찾으려 노력하는 지도자.",
+    "image": ["/images/magath/1.webp", "/images/magath/2.webp", "/images/magath/3.webp"]
   }
 ]

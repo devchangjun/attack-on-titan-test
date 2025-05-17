@@ -9,15 +9,15 @@
       },
       {
         "text": "친구 의견을 존중하고 다른 메뉴를 먹는다.",
-        "characterScores": { "armin": 3, "hannes": 3, "zeke": 2, "hange": 1, "bertolt": 1 }
+        "characterScores": { "armin": 3, "hannes": 3, "zeke": 2, "hange": 1, "bertolt": 2 }
       },
       {
         "text": "중간 메뉴를 찾아 타협한다.",
-        "characterScores": { "erwin": 2, "gabi": 2, "jean": 2, "reiner": 2 }
+        "characterScores": { "erwin": 2, "gabi": 2, "jean": 2, "reiner": 2, "armin": 1 }
       },
       {
         "text": "각자 먹고 싶은 걸 시킨다.",
-        "characterScores": { "annie": 2, "ymir": 2, "connie": 2, "sasha": 2 }
+        "characterScores": { "annie": 1, "ymir": 2, "connie": 2, "sasha": 2 }
       }
     ]
   },
@@ -27,19 +27,19 @@
     "options": [
       {
         "text": "논리적으로 설득하며 내 아이디어를 관철시킨다.",
-        "characterScores": { "erwin": 3, "eren": 2, "hange": 2, "bertolt": 1 }
+        "characterScores": { "erwin": 3, "eren": 2, "hange": 2, "bertolt": 1, "mikasa": 1 }
       },
       {
         "text": "일단 팀장의 의견을 따르고 상황을 지켜본다.",
-        "characterScores": { "hange": 3, "colt": 2, "falco": 2, "historia": 1 }
+        "characterScores": { "hange": 3, "colt": 2, "falco": 2, "historia": 1, "armin": 2 }
       },
       {
         "text": "팀원들과 조율하며 절충안을 제안한다.",
-        "characterScores": { "bertolt": 3, "jean": 2, "reiner": 2, "magath": 1 }
+        "characterScores": { "bertolt": 3, "jean": 1, "reiner": 2, "magath": 1, "kenny": 1 }
       },
       {
         "text": "대화를 피하고 조용히 내 역할만 한다.",
-        "characterScores": { "annie": 3, "levi": 2, "ymir": 2, "porco": 1 }
+        "characterScores": { "annie": 2, "levi": 2, "ymir": 2, "porco": 1, "mikasa": 1 }
       }
     ]
   },
@@ -71,11 +71,11 @@
     "options": [
       {
         "text": "불만은 있지만 내가 처리한다.",
-        "characterScores": { "armin": 3, "reiner": 2, "colt": 2, "jean": 1 }
+        "characterScores": { "armin": 3, "reiner": 2, "colt": 2, "jean": 1, "kenny": 1 }
       },
       {
         "text": "내 일이 아니므로 선을 긋는다.",
-        "characterScores": { "annie": 3, "porco": 2, "ymir": 2, "kenny": 1 }
+        "characterScores": { "annie": 2, "porco": 2, "ymir": 2, "kenny": 1, "mikasa": 1 }
       },
       {
         "text": "팀원 중 가능한 사람에게 넘긴다.",
@@ -93,19 +93,19 @@
     "options": [
       {
         "text": "먼저 말을 걸어 분위기를 띄운다.",
-        "characterScores": { "sasha": 3, "hange": 2, "connie": 2, "jean": 1 }
+        "characterScores": { "sasha": 2, "hange": 2, "connie": 2, "jean": 1, "hannes": 1 }
       },
       {
         "text": "자연스럽게 어울릴 타이밍을 본다.",
-        "characterScores": { "reiner": 3, "historia": 2, "armin": 2, "pieck": 1 }
+        "characterScores": { "reiner": 3, "historia": 1, "armin": 2, "pieck": 1 }
       },
       {
         "text": "한 사람과만 조용히 대화한다.",
-        "characterScores": { "kenny": 2, "annie": 2, "falco": 2, "colt": 2 }
+        "characterScores": { "kenny": 2, "annie": 1, "falco": 2, "colt": 2, "mikasa": 1 }
       },
       {
         "text": "가능하면 조용히 앉아 있는다.",
-        "characterScores": { "levi": 2, "ymir": 2, "porco": 2, "magath": 2 }
+        "characterScores": { "levi": 2, "ymir": 1, "porco": 2, "magath": 2 }
       }
     ]
   },
@@ -115,11 +115,11 @@
     "options": [
       {
         "text": "우선순위를 정해 빠르게 처리한다.",
-        "characterScores": { "erwin": 3, "magath": 2, "pieck": 2, "hannes": 1 }
+        "characterScores": { "erwin": 3, "magath": 2, "pieck": 2, "hannes": 1, "gabi": 1 }
       },
       {
         "text": "급한 것부터 손대며 진행한다.",
-        "characterScores": { "eren": 2, "reiner": 2, "gabi": 2, "connie": 2, "hange": 1 }
+        "characterScores": { "eren": 2, "reiner": 2, "gabi": 2, "connie": 2, "hange": 1, "armin": 2 }
       },
       {
         "text": "완벽히 끝내려 밤새 각오를 한다.",
@@ -127,7 +127,7 @@
       },
       {
         "text": "도와줄 사람을 찾는다.",
-        "characterScores": { "bertolt": 2, "falco": 2, "historia": 2, "sasha": 2 }
+        "characterScores": { "bertolt": 3, "falco": 2, "historia": 2, "sasha": 2 }
       }
     ]
   },
@@ -137,7 +137,7 @@
     "options": [
       {
         "text": "직접 이야기해서 풀어야 한다고 생각한다.",
-        "characterScores": { "eren": 3, "bertolt": 2, "jean": 2, "historia": 1 }
+        "characterScores": { "eren": 2, "bertolt": 2, "jean": 2, "historia": 1 }
       },
       {
         "text": "참는다. 곧 괜찮아질 거다.",
@@ -163,15 +163,15 @@
       },
       {
         "text": "윤곽만 잡고 즉흥적으로 말한다.",
-        "characterScores": { "eren": 3, "jean": 2, "porco": 2, "connie": 1 }
+        "characterScores": { "eren": 2, "jean": 1, "porco": 2, "connie": 1, "hannes": 1 }
       },
       {
         "text": "간단히 말하고 빠르게 끝낸다.",
-        "characterScores": { "levi": 2, "annie": 2, "ymir": 2, "gabi": 2 }
+        "characterScores": { "levi": 2, "annie": 1, "ymir": 1, "gabi": 2 }
       },
       {
         "text": "다른 사람과 분량을 나누는 걸 제안한다.",
-        "characterScores": { "historia": 2, "falco": 2, "sasha": 2, "colt": 2 }
+        "characterScores": { "historia": 1, "falco": 2, "sasha": 2, "colt": 2 }
       }
     ]
   },
@@ -189,11 +189,11 @@
       },
       {
         "text": "큰 흐름만 정하고 디테일은 넘긴다.",
-        "characterScores": { "jean": 2, "connie": 2, "sasha": 2, "reiner": 2 }
+        "characterScores": { "jean": 1, "connie": 2, "sasha": 2, "reiner": 2, "hannes": 2 }
       },
       {
         "text": "즉흥 여행을 선호한다.",
-        "characterScores": { "eren": 3, "ymir": 2, "gabi": 2, "porco": 1 }
+        "characterScores": { "eren": 3, "ymir": 2, "gabi": 2, "porco": 1, "kenny": 1 }
       }
     ]
   },
@@ -207,7 +207,7 @@
       },
       {
         "text": "실수한 사람을 먼저 배려한다.",
-        "characterScores": { "falco": 3, "historia": 2, "jean": 2, "sasha": 1 }
+        "characterScores": { "falco": 2, "historia": 1, "jean": 2, "sasha": 1 }
       },
       {
         "text": "분석해서 원인을 정확히 짚는다.",
@@ -229,11 +229,11 @@
       },
       {
         "text": "팀 분위기를 먼저 살피고 자연스럽게 어울린다.",
-        "characterScores": { "zeke": 3, "armin": 2, "historia": 2, "pieck": 1 }
+        "characterScores": { "zeke": 3, "armin": 2, "historia": 1, "pieck": 1 }
       },
       {
         "text": "내 자리와 할 일을 파악하고 조용히 앉아있는다.",
-        "characterScores": { "mikasa": 2, "annie": 2, "colt": 2, "magath": 2 }
+        "characterScores": { "mikasa": 2, "annie": 1, "colt": 2, "magath": 2 }
       },
       {
         "text": "형식적인 인사만 하고 필요한 일만 한다.",
@@ -247,7 +247,7 @@
     "options": [
       {
         "text": "불편하지만 기분이 상하지 않게 맞춰준다.",
-        "characterScores": { "historia": 3, "hannes": 2, "falco": 2, "colt": 1 }
+        "characterScores": { "historia": 2, "hannes": 2, "falco": 2, "colt": 1 }
       },
       {
         "text": "이유를 듣고 납득되면 기꺼이 바꾼다.",
@@ -255,7 +255,7 @@
       },
       {
         "text": "계획을 바꾸면 기분이 나빠서 불편함을 표현한다.",
-        "characterScores": { "jean": 2, "sasha": 2, "hange": 2, "kenny": 2 }
+        "characterScores": { "jean": 2, "sasha": 2, "hange": 2, "kenny": 2, "connie": 1 }
       },
       {
         "text": "겉으로는 동의하지만 속으로는 약간 실망한다.",
@@ -269,7 +269,7 @@
     "options": [
       {
         "text": "내가 먼저 분위기를 깨고 의견을 낸다.",
-        "characterScores": { "eren": 3, "jean": 2, "hannes": 4, "gabi": 1 }
+        "characterScores": { "eren": 2, "jean": 1, "hannes": 4, "gabi": 1 }
       },
       {
         "text": "누군가 먼저 말할 때까지 기다린다.",
@@ -281,7 +281,7 @@
       },
       {
         "text": "회의보다 메모나 준비가 더 편하다.",
-        "characterScores": { "levi": 2, "falco": 2, "ymir": 2, "porco": 2 }
+        "characterScores": { "levi": 2, "falco": 2, "ymir": 2, "porco": 2, "connie": 1 }
       }
     ]
   }

@@ -125,7 +125,7 @@ function Result({ character }: { character: CharacterType | undefined }) {
     script.onload = () => {
       const kakao = window.Kakao as { isInitialized?: () => boolean; init?: (key: string) => void };
       if (kakao && typeof kakao.isInitialized === "function" && kakao.init && !kakao.isInitialized()) {
-        kakao.init("YOUR_KAKAO_APP_KEY");
+        kakao.init("88e96e2d11b38b5956c91ad7c69bb41b");
       }
     };
     document.body.appendChild(script);
