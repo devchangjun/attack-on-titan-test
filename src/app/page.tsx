@@ -26,6 +26,42 @@ declare global {
   }
 }
 
+function Intro({ onStart }: { onStart: () => void }) {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white px-4">
+      <div className="max-w-lg w-full flex flex-col items-center">
+        <Image
+          src="/images/eren/1.webp"
+          alt="Attack on Titan"
+          width={160}
+          height={160}
+          className="w-40 h-40 object-cover rounded-full shadow-lg mb-6 border-4 border-white"
+        />
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          어떤 <span className="text-yellow-400">진격의 거인</span> 캐릭터와 닮았을까?
+        </h1>
+        <p className="text-lg text-gray-200 mb-8 text-center">
+          간단한 질문에 답하면
+          <br />
+          당신과 닮은 <b>진격의 거인</b> 캐릭터를 찾아드립니다.
+          <br />
+          <span className="text-sm text-gray-400">(총 13문항, 1~2분 소요)</span>
+        </p>
+        <button
+          onClick={onStart}
+          className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full text-xl shadow-lg transition"
+        >
+          테스트 시작하기
+        </button>
+        <div className="mt-8 text-xs text-gray-400 text-center">
+          ※ 본 테스트는 팬메이드이며, 공식 결과와 다를 수 있습니다.
+          <br />ⓒ Hajime Isayama / Kodansha / WIT Studio / MAPPA
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Question({
   question,
   onAnswer,
@@ -162,13 +198,17 @@ function Result({ character }: { character: CharacterType | undefined }) {
 }
 
 export default function Home() {
-  const [step, setStep] = useState<number>(0);
+  const [step, setStep] = useState<number>(-1);
   const [answers, setAnswers] = useState<string[]>([]);
 
   const handleAnswer = (characterIds: string[]) => {
     setAnswers((prev) => [...prev, ...characterIds]);
     setStep((prev) => prev + 1);
   };
+
+  if (step === -1) {
+    return <Intro onStart={() => setStep(0)} />;
+  }
 
   if (step >= (questions as QuestionType[]).length) {
     // 결과 계산
