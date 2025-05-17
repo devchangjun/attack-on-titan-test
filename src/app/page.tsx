@@ -27,6 +27,22 @@ declare global {
 }
 
 function Intro({ onStart }: { onStart: () => void }) {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const start = 0;
+    const end = 3216;
+    const increment = Math.ceil(end / 60); // 60프레임 기준
+    let current = start;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= end) {
+        current = end;
+        clearInterval(timer);
+      }
+      setCount(current);
+    }, 16); // 약 60fps
+    return () => clearInterval(timer);
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white px-4">
       <div className="max-w-lg w-full flex flex-col items-center">
@@ -53,6 +69,9 @@ function Intro({ onStart }: { onStart: () => void }) {
         >
           테스트 시작하기
         </button>
+        <div className="mt-6 mb-2 text-lg font-bold text-pink-500 animate-pulse text-center">
+          {count.toLocaleString()}명이 참여했어요👍
+        </div>
         <div className="mt-8 text-xs text-gray-400 text-center">
           ※ 본 테스트는 팬메이드이며, 공식 결과와 다를 수 있습니다.
           <br />ⓒ Hajime Isayama / Kodansha / WIT Studio / MAPPA
@@ -176,7 +195,7 @@ function Result({ character }: { character: CharacterType | undefined }) {
       <p className="text-sm sm:text-base text-center max-w-xs text-gray-800 dark:text-gray-200 my-2">
         {character.description}
       </p>
-      <div className="bg-gray-50 dark:bg-gray-900 p-3 rounded-lg border max-w-xs text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center">
+      <div className="bg-gray-50 dark:bg-gray-900 p-3 rounded-lg border max-w-xs text-base sm:text-lg text-gray-700 dark:text-gray-300 text-center">
         <b>상세 설명</b>
         <br />
         {character.detail}
