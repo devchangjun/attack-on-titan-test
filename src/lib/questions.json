@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "나는 A음식을 먹고 싶어 하는데 친구는 메뉴를 먹고 싶어한다. 이럴 때 나는?",
+    "question": "나는 A 메뉴를 먹고 싶어 하는데 친구는 다른 메뉴를 먹고 싶어한다. 이럴 때 나는?",
     "options": [
       {
         "text": "내 의견을 말하고 설득해본다.",
@@ -67,22 +67,22 @@
   },
   {
     "id": 4,
-    "question": "주말에 급한 업무가 생겼지만 내 책임은 아니다. 나는?",
+    "question": "주말에 갑자기 내 담당이 아닌 급한 업무가 발생했다. 어떻게 대처할 것인가?",
     "options": [
       {
-        "text": "불만은 있지만 내가 처리한다.",
+        "text": "마음에 들진 않지만 책임감을 가지고 처리한다.",
         "characterScores": { "armin": 3, "reiner": 2, "colt": 2, "jean": 1, "kenny": 1 }
       },
       {
-        "text": "내 일이 아니므로 선을 긋는다.",
+        "text": "내 업무 범위가 아니라고 분명히 선을 그어 거절한다.",
         "characterScores": { "annie": 2, "porco": 2, "ymir": 2, "kenny": 1, "mikasa": 1 }
       },
       {
-        "text": "팀원 중 가능한 사람에게 넘긴다.",
+        "text": "다른 팀원들에게 도움을 요청하고 업무를 분담한다.",
         "characterScores": { "eren": 2, "gabi": 2, "connie": 2, "sasha": 2 }
       },
       {
-        "text": "상사에게 맡기고 판단을 기다린다.",
+        "text": "상황을 상사에게 보고하고 지시를 기다린다.",
         "characterScores": { "falco": 2, "historia": 2, "zeke": 2, "pieck": 2 }
       }
     ]
@@ -155,22 +155,22 @@
   },
   {
     "id": 8,
-    "question": "중요 발표를 하루 전에 맡게 됐다. 나는?",
+    "question": "갑자기 중요한 발표를 맡게 된 상황, 준비 시간은 단 하루뿐이다. 어떻게 대처하시나요?",
     "options": [
       {
-        "text": "계획을 세우고 요점을 정리한다.",
+        "text": "밤을 새더라도 발표 자료를 완벽하게 준비한다.",
         "characterScores": { "zeke": 3, "erwin": 2, "magath": 2, "hange": 1 }
       },
       {
-        "text": "윤곽만 잡고 즉흥적으로 말한다.",
+        "text": "핵심 내용만 정리하고 나머지는 현장에서 대응한다.",
         "characterScores": { "eren": 2, "jean": 1, "porco": 2, "connie": 1, "hannes": 1 }
       },
       {
-        "text": "간단히 말하고 빠르게 끝낸다.",
+        "text": "최소한의 내용으로 간결하게 발표를 마무리한다.",
         "characterScores": { "levi": 2, "annie": 1, "ymir": 1, "gabi": 2 }
       },
       {
-        "text": "다른 사람과 분량을 나누는 걸 제안한다.",
+        "text": "동료들에게 발표 분담을 요청하고 협력하여 준비한다.",
         "characterScores": { "historia": 1, "falco": 2, "sasha": 2, "colt": 2 }
       }
     ]
@@ -199,22 +199,22 @@
   },
   {
     "id": 10,
-    "question": "동료가 실수해서 문제가 생겼을 때 나는?",
+    "question": "팀원이 실수로 문제가 발생했을 때, 당신의 첫 반응은?",
     "options": [
       {
-        "text": "해결 방안을 먼저 찾는다.",
+        "text": "문제 해결을 위한 구체적인 방안부터 제시한다.",
         "characterScores": { "zeke": 3, "erwin": 2, "pieck": 2, "hannes": 1 }
       },
       {
-        "text": "실수한 사람을 먼저 배려한다.",
+        "text": "실수한 팀원의 마음을 먼저 헤아리고 위로한다.",
         "characterScores": { "falco": 2, "historia": 1, "jean": 2, "sasha": 1 }
       },
       {
-        "text": "분석해서 원인을 정확히 짚는다.",
+        "text": "문제의 원인을 체계적으로 분석하고 파악한다.",
         "characterScores": { "hange": 3, "magath": 2, "annie": 2, "gabi": 1 }
       },
       {
-        "text": "실수 재발 방지를 위해 단호하게 말한다.",
+        "text": "같은 실수가 반복되지 않도록 명확하게 지적한다.",
         "characterScores": { "eren": 2, "gabi": 2, "porco": 2, "kenny": 2 }
       }
     ]
@@ -265,22 +265,22 @@
   },
   {
     "id": 13,
-    "question": "회의 중, 모두 조용할 때 누군가 의견을 내길 바란다면?",
+    "question": "회의 중 침묵이 이어질 때, 당신의 행동은?",
     "options": [
       {
-        "text": "내가 먼저 분위기를 깨고 의견을 낸다.",
+        "text": "적극적으로 의견을 제시하며 토론을 시작한다.",
         "characterScores": { "eren": 2, "jean": 1, "hannes": 4, "gabi": 1 }
       },
       {
-        "text": "누군가 먼저 말할 때까지 기다린다.",
+        "text": "다른 사람이 먼저 발언하기를 기다린다.",
         "characterScores": { "mikasa": 2, "annie": 2, "historia": 2, "colt": 2 }
       },
       {
-        "text": "상황을 정리해서 차분히 제안한다.",
+        "text": "지금까지의 논의를 정리하고 의견을 제시한다.",
         "characterScores": { "bertolt": 3, "erwin": 2, "pieck": 2, "magath": 1 }
       },
       {
-        "text": "회의보다 메모나 준비가 더 편하다.",
+        "text": "의견을 메모로 정리해서 나중에 공유한다.",
         "characterScores": { "levi": 2, "falco": 2, "ymir": 2, "porco": 2, "connie": 1 }
       }
     ]
