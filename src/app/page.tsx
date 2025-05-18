@@ -23,6 +23,7 @@ interface CharacterType {
 declare global {
   interface Window {
     Kakao: unknown;
+    gtag: (command: string, action: string, params?: unknown) => void;
   }
 }
 
@@ -43,6 +44,17 @@ function Intro({ onStart }: { onStart: () => void }) {
     }, 16); // 약 60fps
     return () => clearInterval(timer);
   }, []);
+
+  const handleStart = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "test_start", {
+        event_category: "사용자_참여",
+        event_label: "테스트 시작",
+      });
+    }
+    onStart();
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white px-4">
       <div className="max-w-lg w-full flex flex-col items-center">
@@ -64,7 +76,7 @@ function Intro({ onStart }: { onStart: () => void }) {
           <span className="text-sm text-gray-400">(총 13문항, 1~2분 소요)</span>
         </p>
         <button
-          onClick={onStart}
+          onClick={handleStart}
           className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full text-xl shadow-lg transition"
         >
           테스트 시작하기
@@ -132,6 +144,13 @@ function Result({ character }: { character: CharacterType | undefined }) {
   }, []);
 
   const handleKakaoShare = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "kakao_share", {
+        event_category: "공유_활동",
+        event_label: character?.name || "알 수 없는 캐릭터",
+      });
+    }
+
     if (!window.Kakao || typeof (window.Kakao as { Share?: unknown }).Share !== "object") {
       alert("카카오톡 공유 기능을 사용할 수 없습니다. 새로고침 후 다시 시도해 주세요.");
       return;
