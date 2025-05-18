@@ -226,7 +226,7 @@ function Result({ character }: { character: CharacterType | undefined }) {
         다시하기
       </button>
       <button
-        className="w-full mt-2 px-4 py-3 rounded bg-yellow-400 text-black hover:bg-yellow-500 font-semibold text-base transition"
+        className="w-full mt-2 px-4 py-3 rounded bg-yellow-400 text-black hover:bg-yellow-500 font-semibold text-base transition mb-10"
         onClick={handleKakaoShare}
       >
         카카오톡으로 공유하기
